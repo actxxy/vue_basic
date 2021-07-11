@@ -1,1 +1,25 @@
-sdf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/vue.js"></script>
+    <title>初始Vue</title>
+</head>
+<body>
+    <!-- 准备好容器 -->
+    <div id="app">
+        <h1>hello,{{stuName}}</h1>
+    </div>
+    <script type="text/javascript">
+        // 创建一个vue的实例对象
+        new Vue({
+            el:'#app', // el用于指定当前Vue实例为哪个容器服务，值是选择器字符串
+            data:{
+                stuName:'薛晓义'
+            }
+        })
+    </script>
+</body>
+</html><script src="text/javascript"></script>
