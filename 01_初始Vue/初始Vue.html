@@ -10,14 +10,26 @@
 <body>
     <!-- 准备好容器 -->
     <div id="app">
-        <h1>hello,{{stuName}}</h1>
+        <h1>hello,{{stu.name}}</h1>
+        <h1>htllo,{{stu.address}}</h1>
+        <h1>我学的是{{stu.subject()}}</h1>
+        <hr>
+
+        <h1>{{stu.name,stu.address}}</h1>
+        
     </div>
     <script type="text/javascript">
         // 创建一个vue的实例对象
         new Vue({
             el:'#app', // el用于指定当前Vue实例为哪个容器服务，值是选择器字符串
             data:{
-                stuName:'薛晓义'
+                stu:{
+                    name:'xxy',
+                    address:'中国',
+                    subject:function(){
+                        return "前端学科"
+                    }
+                }
             }
         })
     </script>
